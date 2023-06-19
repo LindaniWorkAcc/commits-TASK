@@ -1,0 +1,111 @@
+Assessment day - 100 marks
+1) Create Windows Ec2 machine with RDP and internet enabled
+2) Create Windows ec2 and launch a website " hello world" 
+3) Create a Linux ec2 
+4) Launch a linux ec2 and launch a website on linux server (via mobaxterm)
+5) What is difference between public and private ip
+6) Can you launch your machine if keypair is lost?
+7) Launch a website in AWS without RDP in windows
+8) Enable termination protection in ec2
+9) Enable shutdown behaviour in which if machine is shutdown it should be terminated 
+10) When i shutdown the machine it should not delete the storage. How can we do that?
+11) Terminate vs shutdown?
+12) Can we change the security after machine is launched ?
+13) What is reboot of machine?
+14) Launch a machine in mumbai in ap-south-1a 
+15) launch Public S3 bucket -> upload object -> make your object public -> make s3 private -> will you be able to access object?
+16) launch a private s3 bucket -> change it to private
+17) Enable versioning by default when you create a S3 bucket
+18) Delete the object in S3 bucket
+19) Can you make a object public in private s3 bucket ?
+20) What happens when : 
+
+a) Create bucket ->Enable versioning -> suspend versioning -> upload a object -> delete the object -> can you bring the object back?
+b) Create bucket -> enable versioning -> upload object (file1) -> suspend versioning -> upload object (file2) -> delete file 2 -> can you bring the 
+file2 back?
+c) Create bucket -> enable versioning -> upload object (file1) -> suspend versioning -> upload object (file2) -> delete file 1 -> can you bring the 
+file1 back?
+d) Create bucket -> upload object (file1) -> enable versioning -> upload object (file2) -> delete file1 -> can you bring the file1 back?
+e) Create bucket -> upload object (file1) -> enable versioning -> upload object (file2) -> delete file2 -> can you bring file2 back?
+f) Create bucket  -> upload object (file1) -> enable versiong -> upload object (file2) -> Suspend versioning -> Delete file1 -> Can you bring file1 back??
+g) Create bucket  -> upload object (file1) -> enable versiong -> upload object (file2) -> Suspend versioning -> Delete file2 -> Can you bring file2 back??
+h) Create bucket -> Enable versioning -> upload object (file1) -> suspend versioning -> upload file2 -> Enable versioning -> upload file 3 
+-> suspend versionnig-> delete file 1->can you bring back file1
+i)Create bucket -> Enable versioning -> upload object (file1) -> suspend versioning -> upload file2 -> Enable versioning -> upload file 3 
+-> suspend versionnig-> delete file2->can you bring back file2
+j) Create bucket -> Enable versioning -> upload object (file1) -> suspend versioning -> upload file2 -> Enable versioning -> upload file 3 
+-> suspend versionnig-> delete file3->can you bring back file3
+
+
+
+
+21) Create a bucket -> make s3 bucket public -> upload object -> make the object as public -> now change the object back to private
+
+
+
+
+
+
+
+
+
+
+
+22) Is it necessary to delete the content of S3 bucket to delete a S3 bucket? how can you delete a S3 bucket
+
+
+
+
+23) What is the significance of creating a S3 bucket in a particual region?
+
+
+
+24) Demonstrate CRR(cross region replication) in s3 in which source bucket is in northvirginia and the destination bucket is in mumbai
+
+
+
+25) what happens if you change your source bucket to private and destination bucket as private? still CRR will work?
+yes still works 
+
+
+
+26) what happens if you change your source bucket to public and destination bucket as private ? still CRR will work?
+
+lets see- it works 
+
+
+
+27) what happens if you change your source bucket to public and destination bucket as public? still CRR will work?
+
+works - same as 24 my buckets were both public -> same folder as 24
+
+
+28) What happens if you change the object in source bucket to public? will it be changed to public in destination bucket also?
+
+
+checking ---  no it wont 
+29) What happens if you change the object in source bucket to private ?will it be changed to private in destination bucket also or will not change anything?
+
+did not change anything 
+
+
+
+
+30)What happens if you change the object(which came via CRR) in destination bucket to public? will it impact the crr property in any way?
+
+
+nothing changed 
+
+31) what happens when you delete the object from the source bucket? would it be deleted in destination bucket also?
+
+
+32) what happens when you delete the object from the destination bucket? would it be deleted in source bucket also?
+33) what happens when your disable/suspend versioning in destination bucket? still CRR will work or not?
+34)  what happens when your disable/suspend versioning in source bucket? still CRR will work or not?
+
+
+
+35) Create a bucket -> create a folder -> upload an object in that folder
+36) Create a RDS server and connect ec2 with SQL
+37) Attach a elastic ip to an existing machine
+38) Demonstrate autoscaling in which if you terminate the machine it will again come back to the desired state
